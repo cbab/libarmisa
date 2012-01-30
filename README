@@ -1,0 +1,53 @@
+libarmisa readme
+================
+
+0. Licence
+----------
+
+This library can be freely modified and redistributed under the terms
+of the GNU Lesser General Public Licence. See COPYING for details.
+
+
+1. Purpose
+----------
+
+The purpose of libarmisa is to provide a software implementation of
+the ARMv7 instruction set architecture for use in instruction set
+simulators.
+
+
+2. Dependencies
+---------------
+
+To build and use the library, the only dependency is the base Boost
+library. To build and run tests, the Boost Unit Test Framework is also
+required. See http://www.boost.org/ for details.
+
+
+3. Compilation and installation
+-------------------------------
+
+To build and install the static library and headers, execute the
+following commands in the root directory:
+
+ make
+ make install
+
+Installation step may require root privileges.
+
+By default, everything is installed in /usr/local:
+ - Static library: /usr/local/lib/libarmisa.a
+ - Headers: /usr/local/include
+ - Documentation: /usr/local/share/doc/libarmisa
+
+These paths can be configured by changing the PREFIX variable in
+Makefile and doc/Makefile.
+
+
+4. Usage
+--------
+
+To use the library:
+ - Link with it: -larmisa
+ - Include the appropriate header: #include <armv7/isa.hpp>
+ - Read API documentation in /usr/local/share/doc/libarmisa/html/index.html
